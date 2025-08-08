@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to my Personal Website</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Background styling */
+    body {
+      background: url('') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Lightning glow effect */
+    .glow {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 
+        2px 2px 0 #000,  /* Outline effect */
+        -2px -2px 0 #000,
+        0 0 10px #0ff,    /* Lightning-like glow */
+        0 0 20px #0ff,
+        0 0 30px #0ff;
+      animation: flicker 2s infinite;
+    }
+
+    @keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0.4;
+      }
+    }
+
+    /* Navigation styles */
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 0 15px;
+      padding: 10px 20px;
+      border: 2px solid white;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glow">Click below to know more about me</div>
+
+  <nav>
+    <a href="about.html">About Me</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+</body>
+</html>
